@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyFirstPortfolio</title>
+ <link href="base.css" rel="stylesheet">
+ <link href="style.css" rel="stylesheet">
+<style>
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+  max-width: 900px;
+  box-sizing: border-box;
+  background-color: #121212;  /* Dark background */
+  color: #f0f0f0;             /* Light text for contrast */
+  font-family: 'Segoe UI', sans-serif;
+}
+.nav-list {
+  position: fixed;       /* Fix position relative to viewport */
+  top: 20px;             /* 20px from the top */
+  right: 20px;           /* 20px from the right */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* optional: to align vertically center if needed */
+  align-items: center;
+  background: transparent; /* no background */
+  z-index: 1000;          /* make sure it stays on top */
+}
+
+ 
+.nav-button {
+  display: inline-block;
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
+
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff; /* Ensure headings stand out */
+}
+
+a {
+  text-decoration: none;
+}
+
+figcaption {
+  color: #cccccc;
+  text-align: center;
+  font-style: italic;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+
+th, td {
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: left;
+}
+thead {
+  background color: #222;
+}
+tbody tr:nth-child(odd) {
+  background color: #1a1a1a;
+}
+tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+ 
+</style>
+</head>
+
+    <body>
+      <header>
+        <ul>
+          <li><a href="index.html" class="nav-button">Home</a></li>
+          <li><a href="base_index.html" class="nav-button">Base Page</a></li>
+          <li><a href="tweets.html" class="nav-button">Tweet</a></li>
+        </ul>
+      </header>
+      <main>
+      <article>
+       <h1>Trevor's coding journey</h1>
+       <h2>HTML and css journey</h2>
+           <p>This is a cool way to start a coding journey</p>
+
+       <h3>The Journey began and the experience has been thrilling</h3>
+         <p>Headings are enclosed in a h tag while paragraphs are enclosed in a p tag</p>
+         <p>The journey is hard and time consuming but it will be worth it at the end.</p>
+       <h4>Contact me</h4>
+          <p>To reach me just light a fire or something, or hit some drums in ululation and i'll be there</p>
+       <figure>
+              <a href="https://au.pinterest.com/pin/18366310975335380/">
+            <img src="Thankyouforattention.jpeg" width="600" height="380" alt="Thankyou for your attention. Any question?.">
+            <figcaption>Thankyou for your attention!. Any Question?.</figcaption>
+             </a>
+       </figure>
+       <div class="learners-table">
+        <h2>Meet some learners.</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+             <td>Emily</td>
+             <td>28</td>
+             <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>32</td>
+              <td>Australia</td>
+            </tr>
+            <tr>
+              <td>Sophia</td>
+              <td>21</td>
+              <td>UK</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+      </article>
+      <aside>
+        <p>placeholder to add comment thread later</p>
+      </aside>
+      </main>
+       <footer>
+        <div class="icon-row">
+        <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">
+        <dotlottie-player
+        src="https://lottie.host/f8c80680-7887-4150-8be6-e093b4d9f454/TwbqaGvli6.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 50px; height: 50px"
+        loop
+        autoplay></dotlottie-player>
+       </a>
+       <a href="https://github.com/trevorkn" target="_blank">
+       <dotlottie-player
+       src="https://lottie.host/46631d9a-be0a-469d-b60b-979ddbc73d41/KzoQ8yYqLl.lottie"
+       background="transparent"
+       speed="1"
+       style="width: 50px; height: 50px"
+       loop
+       autoplay>
+      </dotlottie-player>
+      </a>
+       </div>
+       <p>Made by Trevor - <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">here</a></p>
+       </footer>
+      
+       <script
+       src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+       type="module"
+       ></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyFirstPortfolio</title>
+ <link href="base.css" rel="stylesheet">
+ <link href="styles.css" rel="stylesheet">
+<style>
+.nav-button {
+  display: block;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-list {
+  position: fixed;       /* Fix position relative to viewport */
+  top: 20px;             /* 20px from the top */
+  right: 20px;           /* 20px from the right */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* optional: to align vertically center if needed */
+  align-items: center;
+  background: transparent; /* no background */
+  z-index: 1000;          /* make sure it stays on top */
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+ .nav-button:hover {
+  background-color: #555;
+ }
+
+ 
+</style>
+</head>
+<body>
+<header>
+    <ul>
+     <li> <a href="index.html" class="nav-button">Home</a></li>
+     <li><a href="tweets.html" class="nav-button">Tweet</a></li>
+     <li> <a href="base_index.html" class="nav-button">Base Page</a></li>     
+</ul>
+</header>
+<main>
+<article>
+<h1>This is the heading</h1>
+<p>This is a cool way to start a coding journey</p>
+
+<blockquote class="twitter-tweet" data-theme="dark">
+<p lang="en" dir="ltr">
+I’m building my dream one skill at a time — to design, code, and create solutions that help others. Whatever I choose to do, I’m committed to doing it with excellence.
+
+ <a href="https://twitter.com/hashtag/VisionBoard?src=hash&amp;ref_src=twsrc%5Etfw">#VisionBoard</a>
+  <a href="https://twitter.com/hashtag/DevInProgress?src=hash&amp;ref_src=twsrc%5Etfw">#DevInProgress</a> 
+  <a href="https://twitter.com/hashtag/PurposeDriven?src=hash&amp;ref_src=twsrc%5Etfw">#PurposeDriven</a> 
+  <a href="https://twitter.com/hashtag/ALXafrica?src=hash&amp;ref_src=twsrc%5Etfw">#ALXafrica</a> 
+  <a href="https://t.co/GOmhzX5xLG">pic.twitter.com/GOmhzX5xLG</a>
+   </p>
+  &mdash; Trevor Kip (@KipkemboiT47855) 
+ 
+  <a href="https://twitter.com/KipkemboiT47855/status/1919955127286338038?ref_src=twsrc%5Etfw">May 7, 2025</a>
+</blockquote>
+</article>
+<aside>
+  <p>placeholder to add comment thread later.</p>
+</aside>
+</main>
+<footer>
+  <p>Made by Trevor - <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">here</a></p>
+</footer>
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
