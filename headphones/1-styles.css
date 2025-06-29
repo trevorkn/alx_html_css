@@ -5,14 +5,17 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.logo-icon {
-    margin-top: 20px;
-   
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
 }
 
 .hero-area {
     background-image: 
-                    url('/headphones/Images/images/headphones_hero_1.jpg');
+                    url('/Images/images/headphones_hero_1.jpg');
     
     background-size: cover;
     background-position: center;
@@ -22,6 +25,10 @@ body {
     padding: 20px;
     padding-top: 0;
 
+}
+.hero-area header {
+  position: relative;
+  z-index: 2;
 }
 
 nav ul {
@@ -51,17 +58,20 @@ nav a:hover {
     flex-direction: column;
     text-align: center;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 #call-to-action {
     background-color: #FF6565;
     color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 22px;
-    font-weight: bold;
-    margin-top: 1rem;
-    font-size: 1rem;
+    padding: 0.7rem 0;
+    width: 10rem;
     display: block;
+    border: none;
+    border-radius: 1.3rem;
+    font-weight: bold;
+    margin: 3rem auto 0;
+    font-size: 1rem;
   transition: background-color 0.5s ease;
 }
 #call-to-action:hover{
@@ -82,7 +92,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;
     min-height: 60vh;
     margin-top: 3rem;
     padding: 3rem 2rem;
@@ -206,4 +215,129 @@ margin-bottom: 1rem;
 }
 .holberton_school-icon-star:before {
   content: "\e914";
+}
+.results {
+  min-height: 60vh;
+  background-image: url(/Images/images/headphones_hero_2.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 50px;
+}
+
+.resultsparagraph {
+   padding-left: 5rem;
+    max-width: 40rem;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.image-container img {
+  height: auto;
+  width: 12rem;
+}
+.pentagon-row {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.contactus {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  margin: 0;
+ justify-content: center;
+ 
+}
+.container {
+  width: 300px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+
+}
+button {
+  margin: 20px auto 0;
+
+  padding: 12px 0;
+  display: block;
+  background-color: #ff6f6f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 9rem;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+button:hover {
+  background-color: #ff4e4e;
+}
+footer {
+  background-color: #071629;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  color: white;
+  position: relative;
+  flex-wrap: wrap;
+  min-height: 15vh;
+
+}
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+footer-left img {
+  width: 12rem;
+}
+.socials a img {
+ width: 3rem;
+ height: 3rem;
+ border-radius: 50%;
+ padding: 0rem;
+ background-color: white;
+}
+.footer-copy {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
 }
